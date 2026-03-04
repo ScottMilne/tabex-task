@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\SellerCommissionSummaryController;
+use App\Http\Controllers\TransactionController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -21,4 +23,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
+});
+
+Route::prefix('v1')->group(function (): void {
+    Route::post('/transactions', [TransactionController::class, 'store']);
+    Route::get('/transactions/{id}', [TransactionController::class, 'show']);
+    Route::get('/sellers/{id}/commission-summary', [SellerCommissionSummaryController::class, 'show']);
 });
