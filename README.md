@@ -1,5 +1,10 @@
 # Tebex PHP Technical Assessment
 
+## Implementation Overview
+
+A detailed overview of the implementation—architecture, data flows, file structure, and design decisions—is available in [docs/IMPLEMENTATION.md](docs/IMPLEMENTATION.md).
+
+
 ## About Tebex
 
 Tebex is a leading fintech platform in the gaming industry, enabling game server owners and content creators to monetize their communities through payment processing, subscription management, and digital commerce solutions. We handle millions of transactions across multiple currencies and gaming platforms.
