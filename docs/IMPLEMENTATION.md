@@ -53,7 +53,7 @@ php artisan test
 
 ## Demo Data
 
-The [DatabaseSeeder](database/seeders/DatabaseSeeder.php) populates sample sellers and transactions for quick testing
+The DatabaseSeeder populates sample sellers and transactions for quick testing
 
 Run `php artisan migrate --seed` to load this data. The section below uses these IDs in its curl examples.
 
